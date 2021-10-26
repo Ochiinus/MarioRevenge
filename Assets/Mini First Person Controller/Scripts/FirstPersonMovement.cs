@@ -12,7 +12,8 @@ public class FirstPersonMovement : MonoBehaviour
     public KeyCode runningKey = KeyCode.LeftShift;
     public float targetMovingSpeed;
     public int directionStatut = 0;
-
+    public GameObject canvas;
+    
     Rigidbody rigidbody;
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
     public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
@@ -23,6 +24,7 @@ public class FirstPersonMovement : MonoBehaviour
     {
         // Get the rigidbody on this.
         rigidbody = GetComponent<Rigidbody>();
+        canvas.SetActive(false);
     }
 
     void FixedUpdate()
@@ -118,10 +120,7 @@ public class FirstPersonMovement : MonoBehaviour
 
     void OnTriggerStay(Collider other) {
         if(other.name == "tuyau") {
-            if ( Input.GetKey(KeyCode.LeftControl))
-            {
-                CanvasObject.SetActive(true);
-            }
+            canvas.SetActive(true);
         }
     }
     void OnTriggerEnter(Collider col){
