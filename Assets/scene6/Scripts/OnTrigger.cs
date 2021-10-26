@@ -16,8 +16,7 @@ public class OnTrigger : MonoBehaviour
     {
         if (col.name == "First Person Controller")
         {
-            InvokeRepeating("SpawnBalls",1.0f,1.5f);
-            print("Il entre");
+            InvokeRepeating("SpawnBalls",0f,1.5f);
         }
     }
     
@@ -32,10 +31,11 @@ public class OnTrigger : MonoBehaviour
     void SpawnBalls()
     {
 
-        float planeZ = GameObject.Find("s6_slope").transform.position.z;
-        int z = Random.Range(-10, -4);
-        Instantiate(balls, new Vector3(67.21f, 9f, z), Quaternion.identity,GameObject.Find("Scene6").transform );
-           print(z);
+        float planeX = GameObject.Find("spawnBalls").transform.position.x;
+        float planeY = GameObject.Find("spawnBalls").transform.position.y;
+        float planeZ = GameObject.Find("spawnBalls").transform.position.z;
+        int z = Random.Range(-8, 0);
+        Instantiate(balls, new Vector3(planeX, planeY, planeZ+z), Quaternion.identity,GameObject.Find("Scene6").transform );
 
     }
 
