@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - s6_death_balls
   layers:
   - Default
   - TransparentFX
