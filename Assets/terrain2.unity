@@ -8269,8 +8269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: 76.88196}
-  m_SizeDelta: {x: 244.8407, y: 63.6099}
+  m_AnchoredPosition: {x: 0, y: 110}
+  m_SizeDelta: {x: 331.9044, y: 45.3737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868475357
 MonoBehaviour:
@@ -8285,7 +8285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.02608349, g: 0.5660378, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8294,7 +8294,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -8305,7 +8305,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tu as gagn\xE9, bravo !\n c'est bien \xE9clat\xE9 hein ?"
+  m_Text: "Tu as gagn\xE9, bravo !"
 --- !u!222 &1868475358
 CanvasRenderer:
   m_ObjectHideFlags: 0
