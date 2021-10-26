@@ -17,7 +17,7 @@ public class masseContact : MonoBehaviour
     }
     void OnTriggerEnter(Collider col){
         if(col.name == "First Person Controller"){
-            col.transform.position = new Vector3(39.55f, 9.59f, -71.04f);
+            col.transform.position = new Vector3(120f, 0f, 72f);
         }
     }
 }

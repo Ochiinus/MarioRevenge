@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - cmdDirection
+  - s6_death_balls
+  - pique
   layers:
   - Default
   - TransparentFX
