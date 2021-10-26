@@ -9,7 +9,10 @@ public class deathZone : MonoBehaviour
 
         if (col.name == "First Person Controller")
         {
-            GameObject.Find("First Person Controller").transform.position = new Vector3(49.62f, 14.72f, 52.04f);
+            float planeX = GameObject.Find("marche-6").transform.position.x;
+            float planeY = GameObject.Find("marche-6").transform.position.y;
+            float planeZ = GameObject.Find("marche-6").transform.position.z;
+            GameObject.Find("First Person Controller").transform.position = new Vector3(planeX, planeY, planeZ);
         }
     }
 }
