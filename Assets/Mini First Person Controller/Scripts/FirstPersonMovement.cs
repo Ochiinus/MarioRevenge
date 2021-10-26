@@ -120,8 +120,7 @@ public class FirstPersonMovement : MonoBehaviour
         if(other.name == "tuyau") {
             if ( Input.GetKey(KeyCode.LeftControl))
             {
-                // this.transform.position.x += 1;
-                // this.transform.position.y += 1;
+                CanvasObject.SetActive(true);
             }
         }
     }
