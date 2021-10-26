@@ -14,7 +14,7 @@ public class OnTrigger : MonoBehaviour
     public float FallingThreshold = -10f;
     private void OnTriggerEnter(Collider col)
     {
-        if (col.name == "ThirdPersonController")
+        if (col.name == "First Person Controller")
         {
             InvokeRepeating("SpawnBalls",1.0f,1.5f);
             print("Il entre");

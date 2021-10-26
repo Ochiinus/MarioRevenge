@@ -17,7 +17,7 @@ public class death_ball_disable : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "ThirdPersonController")
+        if (col.gameObject.name == "First Person Controller")
         {
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
