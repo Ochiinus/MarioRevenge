@@ -48,11 +48,11 @@ public class OnTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (myRigidbody.velocity.y < FallingThreshold)
-        {
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.path);
-        }
+        // if (myRigidbody.velocity.y < FallingThreshold)
+        // {
+        //     Scene scene = SceneManager.GetActiveScene();
+        //     SceneManager.LoadScene(scene.path);
+        // }
 
     }
 }

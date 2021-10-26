@@ -9,8 +9,7 @@ public class DeathOnLava : MonoBehaviour
     {
         if (col.name == "First Person Controller")
         {
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.path);
+            GameObject.Find("First Person Controller").transform.position = new Vector3(49.62f, 14.72f, 52.04f);
         }
     }
     // Start is called before the first frame update

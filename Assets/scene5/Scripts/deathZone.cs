@@ -6,13 +6,10 @@ public class deathZone : MonoBehaviour
 {
     void OnTriggerEnter(Collider col){
 
-        float posX = 89;
-        float posY = 10;
-        float posZ = -17;
 
         if (col.name == "First Person Controller")
         {
-            col.transform.position = new Vector3(posX, posY, posZ);
+            GameObject.Find("First Person Controller").transform.position = new Vector3(49.62f, 14.72f, 52.04f);
         }
     }
 }

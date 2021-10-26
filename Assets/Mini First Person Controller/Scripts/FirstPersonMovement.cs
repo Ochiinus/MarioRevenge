@@ -127,7 +127,7 @@ public class FirstPersonMovement : MonoBehaviour
     }
     void OnTriggerEnter(Collider col){
         if(col.tag == "pique"){
-            GameObject.Find("First Person Controller").transform.position = new Vector3(20f, 0f, 60f);
+            GameObject.Find("First Person Controller").transform.position = new Vector3(49.62f, 14.72f, 52.04f);
         }
     }
 }
