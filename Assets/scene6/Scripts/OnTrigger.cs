@@ -23,7 +23,7 @@ public class OnTrigger : MonoBehaviour
     
     private void OnTriggerExit(Collider col)
     {
-        if (col.name == "ThirdPersonController")
+        if (col.name == "First Person Controller")
         {
             CancelInvoke("SpawnBalls");
         }
@@ -33,8 +33,8 @@ public class OnTrigger : MonoBehaviour
     {
 
         float planeZ = GameObject.Find("s6_slope").transform.position.z;
-        int z = Random.Range(-30,-40);
-        Instantiate(balls, new Vector3(91.92f, 20.71f, z), Quaternion.identity,GameObject.Find("Scene6").transform );
+        int z = Random.Range(-10, -4);
+        Instantiate(balls, new Vector3(67.21f, 9f, z), Quaternion.identity,GameObject.Find("Scene6").transform );
            print(z);
 
     }

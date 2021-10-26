@@ -7,7 +7,7 @@ public class DeathOnLava : MonoBehaviour
 {
     private void OnTriggerEnter(Collider col)
     {
-        if (col.name == "ThirdPersonController")
+        if (col.name == "First Person Controller")
         {
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.path);
